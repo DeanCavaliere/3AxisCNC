@@ -1,0 +1,7 @@
+.DS_Store
+xcuserdata
+**/xcuserdata/**
+Scratch/**
+**/*.xccheckout
+Motate.componentinfo.xml
+MotateProject/motate/compile_commands.json
