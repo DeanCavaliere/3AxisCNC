@@ -435,7 +435,7 @@
 #define X_TRAVEL_MIN                0.0                     // {xtn:  minimum travel for soft limits
 #endif
 #ifndef X_TRAVEL_MAX
-#define X_TRAVEL_MAX                420.0                     // {xtm:  travel between switches or crashes
+#define X_TRAVEL_MAX                358                    // {xtm:  travel between switches or crashes
 #endif
 #ifndef X_JERK_MAX
 #define X_JERK_MAX                  JERK_MAX                  // {xjm:
@@ -476,7 +476,7 @@
 #define Y_TRAVEL_MIN                0.0
 #endif
 #ifndef Y_TRAVEL_MAX
-#define Y_TRAVEL_MAX                420.0
+#define Y_TRAVEL_MAX                228
 #endif
 #ifndef Y_JERK_MAX
 #define Y_JERK_MAX                  JERK_MAX
@@ -517,7 +517,7 @@
 #define Z_TRAVEL_MAX                0.0
 #endif
 #ifndef Z_TRAVEL_MIN
-#define Z_TRAVEL_MIN                -120
+#define Z_TRAVEL_MIN                -120 //dist wasterboard to spindle is 45mm
 #endif
 #ifndef Z_JERK_MAX
 #define Z_JERK_MAX                  JERK_MAX
