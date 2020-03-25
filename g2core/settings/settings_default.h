@@ -517,7 +517,7 @@
 #define Z_TRAVEL_MAX                0.0
 #endif
 #ifndef Z_TRAVEL_MIN
-#define Z_TRAVEL_MIN                -120 //dist wasterboard to spindle is 45mm
+#define Z_TRAVEL_MIN                -135 //dist wasterboard to spindle is 45mm
 #endif
 #ifndef Z_JERK_MAX
 #define Z_JERK_MAX                  JERK_MAX

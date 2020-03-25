@@ -126,7 +126,7 @@
 #define X_VELOCITY_MAX              50000                   // xvm  G0 max velocity in mm/min
 #define X_FEEDRATE_MAX              X_VELOCITY_MAX          // xfr  G1 max feed rate in mm/min
 #define X_TRAVEL_MIN                0                       // xtn  minimum travel for soft limits
-#define X_TRAVEL_MAX                420                     // xtm  travel between switches or crashes
+#define X_TRAVEL_MAX                358                     // xtm  travel between switches or crashes
 #define X_JERK_MAX                  JERK_MAX                // xjm  jerk * 1,000,000
 #define X_JERK_HIGH_SPEED           20000                   // xjh
 #define X_HOMING_INPUT              1                       // xhi  input used for homing or 0 to disable
@@ -140,7 +140,7 @@
 #define Y_VELOCITY_MAX              50000
 #define Y_FEEDRATE_MAX              Y_VELOCITY_MAX
 #define Y_TRAVEL_MIN                0
-#define Y_TRAVEL_MAX                420
+#define Y_TRAVEL_MAX                228
 #define Y_JERK_MAX                  JERK_MAX
 #define Y_JERK_HIGH_SPEED           20000
 #define Y_HOMING_INPUT              3
@@ -154,7 +154,7 @@
 #define Z_VELOCITY_MAX              1200
 #define Z_FEEDRATE_MAX              Z_VELOCITY_MAX
 #define Z_TRAVEL_MAX                0
-#define Z_TRAVEL_MIN                -95
+#define Z_TRAVEL_MIN                -135
 #define Z_JERK_MAX                  500
 #define Z_JERK_HIGH_SPEED           1000
 #define Z_HOMING_INPUT              6
