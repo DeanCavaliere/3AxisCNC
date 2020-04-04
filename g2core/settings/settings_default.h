@@ -417,8 +417,8 @@
 //*** Axis Settings ***********************************************************
 //*****************************************************************************
 #define JERK_MAX                    500
-#define JERK_HIGH_SPEED             1000
-#define VELOCITY_MAX                50000.0
+#define JERK_HIGH_SPEED             10000
+#define VELOCITY_MAX                10000.0
 #define SEARCH_VELOCITY             (VELOCITY_MAX/3)
 #define LATCH_VELOCITY              25
 // X AXIS
@@ -435,16 +435,16 @@
 #define X_TRAVEL_MIN                0.0                     // {xtn:  minimum travel for soft limits
 #endif
 #ifndef X_TRAVEL_MAX
-#define X_TRAVEL_MAX                358                    // {xtm:  travel between switches or crashes
+#define X_TRAVEL_MAX                349                    // {xtm:  travel between switches or crashes
 #endif
 #ifndef X_JERK_MAX
 #define X_JERK_MAX                  JERK_MAX                  // {xjm:
 #endif
 #ifndef X_JERK_HIGH_SPEED
-#define X_JERK_HIGH_SPEED           20000.0                  // {xjh:
+#define X_JERK_HIGH_SPEED           10000.0                  // {xjh:
 #endif
 #ifndef X_HOMING_INPUT
-#define X_HOMING_INPUT              1                       // {xhi:  input used for homing or 0 to disable
+#define X_HOMING_INPUT              2                       // {xhi:  input used for homing or 0 to disable
 #endif
 #ifndef X_HOMING_DIRECTION
 #define X_HOMING_DIRECTION          1                       // {xhd:  0=search moves negative, 1= search moves positive
@@ -482,10 +482,10 @@
 #define Y_JERK_MAX                  JERK_MAX
 #endif
 #ifndef Y_JERK_HIGH_SPEED
-#define Y_JERK_HIGH_SPEED           20000.0
+#define Y_JERK_HIGH_SPEED           10000.0
 #endif
 #ifndef Y_HOMING_INPUT
-#define Y_HOMING_INPUT              3
+#define Y_HOMING_INPUT              4
 #endif
 #ifndef Y_HOMING_DIRECTION
 #define Y_HOMING_DIRECTION          1
@@ -517,7 +517,7 @@
 #define Z_TRAVEL_MAX                0.0
 #endif
 #ifndef Z_TRAVEL_MIN
-#define Z_TRAVEL_MIN                -135 //dist wasterboard to spindle is 45mm
+#define Z_TRAVEL_MIN                -146 //dist wasteboard to spindle is 45mm
 #endif
 #ifndef Z_JERK_MAX
 #define Z_JERK_MAX                  JERK_MAX
@@ -948,13 +948,13 @@
 
 // Safety line
 #ifndef DI9_MODE
-#define DI9_MODE                    IO_ACTIVE_HIGH     // Normally closed
+#define DI9_MODE                    IO_ACTIVE_LOW    // CHANGE TO HIGH
 #endif
 #ifndef DI9_ACTION
-#define DI9_ACTION                  INPUT_ACTION_NONE
+#define DI9_ACTION                  INPUT_ACTION_NONE //CHANGE TO STOP
 #endif
 #ifndef DI9_FUNCTION
-#define DI9_FUNCTION                INPUT_FUNCTION_NONE
+#define DI9_FUNCTION                INPUT_FUNCTION_NONE //CHANGE TO SHUTDOWN
 #endif
 
 #ifndef DI10_MODE
