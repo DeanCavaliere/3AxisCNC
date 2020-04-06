@@ -418,7 +418,7 @@
 //*****************************************************************************
 #define JERK_MAX                    500
 #define JERK_HIGH_SPEED             10000
-#define VELOCITY_MAX                25400.0
+#define VELOCITY_MAX                25000.0
 #define SEARCH_VELOCITY             (VELOCITY_MAX/3)
 #define LATCH_VELOCITY              25
 // X AXIS
@@ -450,7 +450,7 @@
 #define X_HOMING_DIRECTION          1                       // {xhd:  0=search moves negative, 1= search moves positive
 #endif
 #ifndef X_SEARCH_VELOCITY
-#define X_SEARCH_VELOCITY           1500.0                   // {xsv:  minus means move to minimum switch
+#define X_SEARCH_VELOCITY           SEARCH_VELOCITY         // {xsv:  minus means move to minimum switch
 #endif
 #ifndef X_LATCH_VELOCITY
 #define X_LATCH_VELOCITY            100.0                   // {xlv:  mm/min
@@ -491,7 +491,7 @@
 #define Y_HOMING_DIRECTION          1
 #endif
 #ifndef Y_SEARCH_VELOCITY
-#define Y_SEARCH_VELOCITY           1500.0
+#define Y_SEARCH_VELOCITY           SEARCH_VELOCITY
 #endif
 #ifndef Y_LATCH_VELOCITY
 #define Y_LATCH_VELOCITY            100.0
