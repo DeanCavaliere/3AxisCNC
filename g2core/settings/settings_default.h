@@ -418,8 +418,8 @@
 //*****************************************************************************
 #define JERK_MAX                    500
 #define JERK_HIGH_SPEED             10000
-#define VELOCITY_MAX                25000.0
-#define SEARCH_VELOCITY             (VELOCITY_MAX/5)
+#define VELOCITY_MAX                12700
+#define SEARCH_VELOCITY             (VELOCITY_MAX/4)
 #define LATCH_VELOCITY              25
 // X AXIS
 #ifndef X_AXIS_MODE
